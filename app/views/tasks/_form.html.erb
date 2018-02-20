@@ -3,5 +3,8 @@
   <%= t.text_field :title %>
   <%= t.label :details %>
   <%= t.text_field :details %>
+  <% if !task.new_record?() %>
+    <%= t.check_box :completed %> <span>Completed</span>
+  <% end %>
   <%= t.submit %>
 <% end %>
