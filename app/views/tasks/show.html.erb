@@ -1,6 +1,7 @@
 <div class="container">
   <div class="box-tasks">
     <h1><%= @task.title %></h1>
+    <%= link_to 'Edit Task', edit_path %>
     <div class="box-details">
       <p><%= @task.details %></p>
     </div>
