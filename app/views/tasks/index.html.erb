@@ -10,6 +10,8 @@
           </li>
       <% end %>
     </ul>
-    <%= link_to "Create a new task", new_task_path %>
+    <%= link_to new_task_path do %>
+    <i class="fas fa-pencil-alt"> Create a new  Task</i>
+    <% end %>
   </div>
 </div>
